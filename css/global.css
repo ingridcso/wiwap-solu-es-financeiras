@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "PoppinsMedium";
+    src: url("./Fontes/Poppins/Poppins-Medium.ttf");
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    src: url("./Fontes/Poppins/Poppins-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    src: url("./Fontes/Roboto/Roboto-Medium.ttf");
+  }
+
+body {
+    font-family: "Poppins";
+    margin: 0px;
+    background-color: #E6E7E8;
+}
+.corpoSite {
+  padding: 0px 100px;
+}
+h1, h2, h3, p {
+    margin: 0px;
+    padding: 0px;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}

@@ -1,0 +1,18 @@
+.rodape {
+    background: #231F20;
+    padding: 20px 100px;
+    margin: 0px;
+    box-shadow: 0 0 4px #383838
+}
+.footer-container a, p, li{
+    color: #FFFF;
+    padding: 0px;
+}
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+}
+.footer-container a{
+    text-decoration: none;
+}
