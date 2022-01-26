@@ -12,14 +12,16 @@
     font-family: "Roboto";
     src: url("./Fontes/Roboto/Roboto-Medium.ttf");
   }
-
 body {
     font-family: "Poppins";
     margin: 0px;
     background-color: #E6E7E8;
+    max-width: 1500px;
+    overflow-x: hidden;
 }
 .corpoSite {
-  padding: 0px 100px;
+  padding: 0px 20px;
+  justify-content: center;
 }
 h1, h2, h3, p {
     margin: 0px;
@@ -29,4 +31,7 @@ ul {
     margin: 0px;
     padding: 0px;
     list-style: none;
+}
+a {
+  text-decoration: none;
 }
