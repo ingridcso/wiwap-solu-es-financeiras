@@ -6,6 +6,7 @@
     justify-content: space-between;
     max-width: 1500px;
     margin: 0px;
+    align-items: center;
 }
 .header-menu {
     display: flex;
@@ -20,9 +21,6 @@
     display: inline-block;
     text-decoration: none;
     position: relative;
-}
-.header-menu img{
-    height: 15px;
 }
 .link a::after{
     display: none;
@@ -58,11 +56,12 @@
     display: block;
     text-decoration: none;
     color: #FFF;
-
 }
-header img{
+.header img{
     height: 40px;
-
+}
+.header-menu img{
+    height: 20px;
 }
 .botaolojista a {
     color: #003462;
@@ -71,64 +70,89 @@ header img{
     display: block;
     text-decoration: none;
 }
-@media (max-width: 800px) {
-    .header{
-        flex-direction: column;
-        gap: 40px;
-        padding: 20px;;
-    }    
-}
-.mobile-menu {
-    cursor: pointer;
+#btn-mobile {
     display: none;
 }
-.mobile-menu div {
-    width: 32px;
-    height: 2px;
-    background-color: #003462;
-    margin: 8px;
-    transition: 0.3s;
-}
-@media (max-width:999px) {
-    .header-menu {
+@media (max-width: 800px) {
+    #btn-mobile {
+        display: block;
+    }
+    .link a:after {
+        background-color: transparent;
+    }
+    .link a{
+        padding-left: 40%;
+    }
+    .header-menu{
+        display: block;
         position: absolute;
-        top: 8vh;
-        right: 0;
-        width: 50vh;
-        height: 92vh;
+        width: 100%;
+        top: 70px;
+        right: 0px;
         background-color: #E6E7E8;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility:  hidden;
+        overflow-y: hidden;
+    }
+    .botaolojista {
+        font-size: 1rem;
+        display: block;
+        text-decoration: none;
+        border: transparent;
+        padding-left: 40%;
+    }
+    .botaolojista:hover{
+        background-color: transparent;
+        border: transparent;
+    }
+    .botaolojista a {
+        padding: 5px 0px;
+    }
+    #nav.active .header-menu{
+        height: calc(100vh - 70px);
+        visibility:  visible;
+        overflow-y: auto;
     }
     .header-menu li {
-        margin-left: 0;
-        opacity: 0;
+        justify-content: center;
+        overflow-x: auto;
+        display: block;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
     }
-    .mobile-menu {
-        display: block
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem
+    }
+    #hamburguer {
+        border-top: 2px solid;
+        width: 20px;
+        display: block;
+    }
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background: currentColor;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer{
+        border-top-color: transparent ;
+    }
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
     }
 }
-.header-menu.active {
-    transform: translateX(0);
-}
-@keyframes navLinkFade {
-    from {
-        opacity: 0;
-        transform: translateX(50px);
-    } to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-.mobile-menu.active .line1 {
- transform: rotate(-45deg) translate(-8px, 8px);
-}
-.mobile-menu.header-menu.active .line2 {
-    opacity: 0;
-}
-.mobile-menu.header-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-}+
