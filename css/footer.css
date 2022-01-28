@@ -1,12 +1,12 @@
 .rodape {
     background: #C0CDD8;
-    padding-left: 50px;
-    padding-top: 20px;
+    padding:20px;
     margin: 0px;
-    height: 550px;
+    height: 500px;
     box-shadow: 0 0 1px #C0CDD8;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    max-width: 1500px;
 }
 .direito {
     font-size: Poppins;
@@ -45,7 +45,7 @@
 .inputUser {
     background: none;
     border: none;
-    border-bottom: 1px solid #003462;
+    border-bottom: 1px solid #33AFB4;
     outline: none;
     color:#003462;
     font-size: 15px;
@@ -90,4 +90,15 @@
     background-color: #00A0A3;
     border: 2px solid #00A0A3;
     transition: 0.5s;
+}
+@media (max-width:800px){
+    .rodape{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .lateral {
+        background-color: #C0CDD8;
+        margin: 0px;
+        padding: 0px;
+    }
 }
