@@ -11,33 +11,6 @@
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
-@media (max-width: 800px) {
-    .adaptacao {
-        grid-template-columns: 1fr;
-    }  
-}
-.trabalho {
-    color: #383838;
-    padding: 20px;
-}
-@media (max-width: 800px) {
-    .trabalho {
-        padding: 10px;
-    }
-}
-.trabalho p {
-    color: #383838;
-}
-.trabalho li{
-    color: #383838;
-    padding-left: 40px;
-    border-left: 1px solid #383838;
-}
-@media (max-width: 800px) {
-    .trabalho li{
-        padding-left: 10px;
-    }
-}
 .processo {
     padding-left: 70px;
     color: #003462;
@@ -84,17 +57,6 @@
 .clique{
     margin-left: 600px;
 }
-@media (max-width:800px){
-    .flexibilidade{
-        padding-top: 20px;
-        background-image: none;
-    }
-}
-@media (max-width:800px){
-    .fim{
-        display: none;
-    }
-}
 .bt-acao a{
     color: #33AFB4;
 }
@@ -113,18 +75,8 @@
 .bt-acao a:hover:after{
     width: 16%;
 }
-@media (max-width:800px){
-.parteempresa {
-    display: none;
-}
-}
 .title {
     color: #014976;
-    font-size: 30px;
-}
-.title h2{
-    font-size: 24px;
-    padding-top: 20px;
 }
 .subtitle {
     display: grid;
@@ -141,7 +93,6 @@
     gap: 20px 0px;
     padding: 10px 15px;
 }
-
 .primeiro {
     padding-left: 30px;
     background-image: url(./fundo-wwp.svg);
@@ -150,12 +101,7 @@
     border-left: 4px solid #003462;
 }
 .lojista {
-    display: inline-block;
-    padding-top: 50px;
-    padding-left: 880px;
-    height: 50px;
-    width: 250px;
-    bottom: 5px;
+    display: none;
 }
 .lojista a{
     font-family: Arial, Helvetica, sans-serif;
@@ -252,17 +198,59 @@
     background-color: #00A0A3;
     box-shadow: 0 0 2px #00A0A3;
 }
-@media (max-width: 800px){
-    .valoresEmpresa {
+.valoresEmpresa {
+    display: none;
+}
+@media (max-width:800px){
+    .parteempresa {
         display: none;
+    }
+    .title {
+        color: #014976;
+        font-size: 30px;
+    }
+    .title h2{
+        font-size: 24px;
+        padding-top: 20px;
     }
     .linhadotempolojista{
         display: block;
+        padding: 0px;
+        background-color:#D7DEE4;;
     }
     .primeiro{
         height: 100px;
-    }
+        }
     .segundo{
         height: 150px;
+        padding-left: 30px;;
+        }
+    .adaptacao {
+        grid-template-columns: 1fr;
+    }  
+    .trabalho {
+        color: #383838;
+        padding: 20px;
+    }
+    .trabalho {
+        padding: 10px;
+    }
+    .trabalho p {
+        color: #383838;
+    }
+    .trabalho li{
+        color: #383838;
+        padding-left: 40px;
+        border-left: 1px solid #383838;
+    }
+    .trabalho li{
+        padding-left: 10px;
+    }
+    .flexibilidade{
+        padding-top: 20px;
+        background-image: none;
+    }
+    .fim{
+        display: none;
     }
 }
