@@ -1,61 +1,91 @@
-<footer class="rodape">
-            <div class="direito">
-                <img src="./img/logowiwap.svg">
-                <h2> Fale com um de nossos especialistas.</h2>
-                    <p> saiba como podemos te ajudar a aumentar as suas vendas! </p>
-                <div class="form">
-                    <form action="/action_page.php">
-                        <div class="inputBox">
-                        <input type="text" id="name" name="name" class="inputUser" required><br>
-                        <label for="name" class="labelInput">Nome:</label>
-                    </div><br>
-                        <div class="inputBox">
-                            <input type="email" id="email" name="email" class="inputUser"  required><br>
-                            <label for="email" class="labelInput">Email:</label>
-                    </div><br>
-                        <div class="inputBox">
-                        <input type="text" id="empresa" name="empresa" class="inputUser" required>
-                        <label for="empresa" class="labelInput">Empresa:</label>
-                    </div><br>
-                        <div class="inputBox">
-                        <input type="number" id="number" name="number" class="inputUser"  required>
-                        <label for="telefone" class="labelInput">Telefone:</label>
-                    </div><br>
-                        <div class="inputBox">
-                        <input type="mensagem" id="mensagem" name="mensagem" class="inputUser" required>
-                        <label for="mensagem" class="labelInput">Mensagem:</label>
-                    </div><br>  
-                    </form>
-                    <div class="conhecer">
-                        <span class="conhecer" class="labelInput"><a href="./">ENVIAR MENSAGEM</a></span>
-                    </div>
-                </div>
-            </div>
-            <div class="lateral">
-                <div class="partesobre">
-                <nav class="sobre">
-            <div>
-                <h3 class="linha"><a href="./renegociacao.html">RENEGOCIAÇÃO</a></h3>
-            </div>
-        </br>
-                <h3 class="linha" ><a href="./contato.html">CONTATO</a></h3>
-        </br>
-        </div>
-        <div class="redessociais">
-        <img src="./img/instagram.png">
-        <img src="./img/linkedin .png">
-        <p> nos siga em nossas redes sociais! </p>
-        <p><strong> Todos os direitos reservados.
-            W2p Soluções Financeiras Ltda.
-            CNPJ 39.474.294/00001-29 </p>
-        </strong>
-        </div>
-            </div>
-        </nav>
-    </footer>
-        <script src="./js/mobilenav.js"></script>
-</body>
-</html>
+.rodape {
+    background: #C0CDD8;
+    padding:20px;
+    margin: 0px;
+    height: 500px;
+    box-shadow: 0 0 1px #C0CDD8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1500px;
+}
+.direito {
+    font-size: Poppins;
+    color: #003462;
+}
+.linha {
+    color: #003462;
+    border-left: 1px solid #003462;
+    padding-left: 40px;
+}
+.form {
+    background-color: rgba(245, 245, 245, 0.295);
+    height: 325px;
+    width: 400px;
+    border-radius: 3px;
+    padding: 20px;
+    border: 1px solid #95aeaf;
+    box-shadow: 0 0 1px #C0CDD8;
+}
+.lateral {
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.redessociais img{
+    padding-left: 50px;
+    height: 50px;
+    width: 50px;
+}
+.lateral a{
+    color: #003462;
+}
+.inputBox {
+    position: relative;
+}
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #33AFB4;
+    outline: none;
+    color:#003462;
+    font-size: 15px;
+    font-family: Poppins;
+    width: 100%;
+    letter-spacing: 2px;
+    padding: 5px;
+}
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+}
+.inputUser:focus ~.labelInput, 
+.inputher:valid ~.labelInput{
+    top: -20px;
+    font-size: 12px;
+    color:#33AFB4
+}
+.direito img{
+    height: 30px;
+}
+.conhecer {
+    padding-top: 10px;
+}
+.conhecer a{
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline;
+    text-decoration: none;
+    color: #003462;
+    background-color: #00346200;
+    padding: 10px 15px;
+    border: 2px solid;
+    border-radius: 2px;
+    border-color: #003462;
+    box-shadow: 0 0 2px #383838;
+    justify-items: center;
+    text-align: center;
+}
 .conhecer a:hover {
     background-color: #00A0A3;
     border: 2px solid #00A0A3;
@@ -63,12 +93,35 @@
 }
 @media (max-width:800px){
     .rodape{
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
+        padding: 0px;
+        padding-top: 20px;
     }
     .lateral {
         background-color: #C0CDD8;
         margin: 0px;
-        padding: 0px;
+        padding-top: 100px;
+        padding-left: 60px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .direito {
+        padding: 0px 20px;
+    }
+    .form{
+        margin: auto;
+        padding: 20px 10px;
+    }
+    .partesobre {
+        justify-items: center;
+    }
+    .inputUser {
+        padding:10px;
+    }
+    .conhecer {
+        margin-top: 20px;
+    }
+    .linha {
+        border-left: transparent;
     }
 }
