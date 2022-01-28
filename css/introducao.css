@@ -65,6 +65,7 @@
 .saibamais li{
     height: 200px;
     width: 60px;
+    font-family: Poppins;
 }
 .cliente{
     max-width: 1500px;
@@ -144,15 +145,13 @@ dl, dd {
         gap: 10px;
     }
     .cliente {
-        padding-top: 20px;
-        padding-left: 20%;
-        display: block;
+        
     }
     .celular, .valoresEmpresa{
         display: none;
     }
-    .linhadotempolojista{
-        display: block;
+    .primeiro,.segundo {
+        padding: 0px;
     }
     }
     
