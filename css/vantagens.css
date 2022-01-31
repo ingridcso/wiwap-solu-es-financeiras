@@ -1,0 +1,55 @@
+.vantagens {
+    padding: 50px 120px;
+}
+.vantagens h2 {
+    margin-bottom: 20px;
+}
+.vantagens ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 180px);
+    ;
+    gap: 40px 80px;
+    margin-top: 30px;
+}
+.vantagens img{
+    height: 60px;
+    width: 60px;
+}
+.vantagens li{
+    text-align: center;
+}
+@media (max-width: 800px){
+    .vantagens {
+        padding: 25px 60px;
+    }
+    .vantagens h2{
+        margin-bottom: 10px;
+    }
+    .vantagens ul {
+        gap:20px
+    }
+}
+/*.vantagens {
+    display: flex;
+    gap: 40px;
+    padding-left: 200px;
+    border-radius: 4px;
+}
+.vantagensEmpresa {
+    box-shadow: 0 0 3px #003462;
+}
+.vantagensEmpresa img {
+    height: 30px;
+    width: 30;
+    padding: 10px 40px;
+    justify-items: center;
+    margin-left: 20px;
+}
+.vantagensEmpresa p {
+    color: #003462;
+    padding: 10px;
+    width: 150px;
+    font-family: Poppins;
+    text-align: center;
+}*/
+
