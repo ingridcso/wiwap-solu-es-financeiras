@@ -43,33 +43,9 @@
 }
 @media(max-width:800px){
     .perguntas {
-        padding-top: 25px 60px;
+        padding: 25px 60px;
     }
     .perguntas h2{
         margin-bottom: 10px;
     }
 }
-/*.perguntas {
-    padding-top: 40px;
-}
-.perguntas a {
-    text-decoration: none;
-    color: #003462;
-    font-family: PoppinsMedium;
-}
-.valoresEmpresa {
-    font-family: Poppins;
-    display: flex;
-    gap: 30px;
-    flex-wrap: wrap;
-    position: relative;
-    padding: 20px 50px ;
-}
-#valores {
-    color: #93CDCE;
-    font-size: 25px;
-    padding-top: 30px;
-}
-.valoresEmpresa {
-    display: none;
-}*/
