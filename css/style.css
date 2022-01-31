@@ -1,7 +1,15 @@
 @import url(./global.css);
+/* MENU */
 @import url(./header.css);
+/* AREA CLIENTE */
 @import url(./introducao.css);
+/* AREA LOJISTA */
 @import url(./parasuaempresa.css);
+/* RODAPÉ */
 @import url(./footer.css);
+/* PROCESSOS */
 @import url(./comofunciona.css);
+/* PERGUNTAS FREQUENTES */
 @import url(./perguntas.css);
+/* VANTAGENS LOJISTA */
+@import url(./vantagens.css);
