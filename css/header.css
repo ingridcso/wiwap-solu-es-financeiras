@@ -34,7 +34,7 @@
     transition: 0.3s;
     position: absolute;
 }
-.link a:hover:after{
+.link a:hover:after, .header-menu a.ativo::after{
     width: 70%;
 }
 .botaolojista {
