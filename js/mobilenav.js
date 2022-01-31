@@ -13,3 +13,16 @@ function toglleMenu (event){
 }
 btnMobile.addEventListener('click', toglleMenu);
 btnMobile.addEventListener('touchstart', toglleMenu);
+
+const links = document.querySelectorAll ('.link a');
+
+function ativarLink (link){
+  const url = location.href;
+  const href = link.href;
+
+  if(url.includes(href)){
+    link.classList.add("ativo");
+  }
+}
+
+links.forEach(ativarLink);
