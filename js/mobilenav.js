@@ -1,4 +1,3 @@
-const btnMobile = document.getElementById('btn-mobile');
 
 function toglleMenu (event){
   if (event.type == 'touchstart') event.preventDefault;
