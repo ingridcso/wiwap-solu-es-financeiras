@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0px;
     align-items: center;
 }
@@ -154,5 +154,8 @@
     #nav.active #hamburguer::after{
         transform: rotate(-135deg);
         top: -7px;
+    }
+    .header {
+        position: relative;
     }
 }
