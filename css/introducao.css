@@ -119,9 +119,6 @@
     justify-items: center;
     text-align: center;
 }
-dl, dd {
-    margin: 0px;
-}
 .image1 {
     max-height: 400px;
     max-width: 400px;
@@ -143,9 +140,6 @@ dl, dd {
     .opcoescliente{
         width: 350px;
         gap: 10px;
-    }
-    .cliente {
-        
     }
     .celular, .valoresEmpresa{
         display: none;
