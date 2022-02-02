@@ -5,6 +5,7 @@
 @import url(./header.css);
 /* AREA CLIENTE */
 @import url(./introducao.css);
+@import url(./opcoescliente.css);
 /* AREA LOJISTA */
 @import url(./parasuaempresa.css);
 @import url(./marcas.css);
