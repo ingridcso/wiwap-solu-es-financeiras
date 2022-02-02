@@ -1,0 +1,32 @@
+.vantagens {
+    padding: 50px 120px;
+}
+.vantagens h2 {
+    margin-bottom: 20px;
+}
+.vantagens ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 180px);
+    ;
+    gap: 40px 80px;
+    margin-top: 30px;
+}
+.vantagens img{
+    height: 60px;
+    width: 60px;
+}
+.vantagens li{
+    text-align: center;
+}
+@media (max-width: 800px){
+    .vantagens {
+        padding: 25px 30px
+    }
+    .vantagens h2{
+        margin-bottom: 10px;
+    }
+    .vantagens ul {
+        gap:20px;
+        grid-template-columns: 1fr;
+    }
+}
