@@ -1,3 +1,5 @@
+/* UTILIDADES */
+@import url(../css/utilidades/formulario.css);
 @import url(./global.css);
 /* MENU */
 @import url(./header.css);
@@ -5,6 +7,7 @@
 @import url(./introducao.css);
 /* AREA LOJISTA */
 @import url(./parasuaempresa.css);
+@import url(./marcas.css);
 /* RODAPÉ */
 @import url(./footer.css);
 /* PROCESSOS */
@@ -13,3 +16,6 @@
 @import url(./perguntas.css);
 /* VANTAGENS LOJISTA */
 @import url(./vantagens.css);
+/* CONTATO */
+@import url(./contato.css);
+@import url(./parceria.css);
