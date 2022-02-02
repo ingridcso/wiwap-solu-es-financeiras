@@ -22,6 +22,7 @@ ul {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 .cor-a1 {
   color: #014976;
@@ -34,6 +35,9 @@ a {
 }
 .cor-a4{
   color: #003462;
+}
+.cor-a5{
+  color: #00172C;
 }
 .font-2-w-p{
   font-family: Poppins;
@@ -48,10 +52,13 @@ a {
   font-weight: bold;
 }
 .font-3-wp{
-  font-size: 20px
+  font-size: 20px;
 }
 .font-4-wp{
-  font-size: 14px
+  font-size: 14px;
+}
+.font-5-wp{
+  font-size: 46px;
 }
 @media (max-width:800px) {
   .corpoSite{
@@ -61,3 +68,4 @@ a {
     padding-top: 20px;
 }
 }
+
