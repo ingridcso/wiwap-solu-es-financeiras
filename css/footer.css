@@ -60,4 +60,7 @@ height: 40px;
     .footer-copy{
         margin-top: 0px;
     }
+    .footer-bg {
+        padding: 25px 30px
+    }
 }
