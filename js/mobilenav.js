@@ -1,3 +1,5 @@
+// Menu hamburguer.
+
 const btnMobile = document.getElementById('btn-mobile');
 
 function toglleMenu (event){
@@ -14,6 +16,8 @@ function toglleMenu (event){
 btnMobile.addEventListener('click', toglleMenu);
 btnMobile.addEventListener('touchstart', toglleMenu);
 
+// Sublinhado ativo. 
+
 const links = document.querySelectorAll ('.link a');
 
 function ativarLink (link){
@@ -26,3 +30,24 @@ function ativarLink (link){
 }
 
 links.forEach(ativarLink);
+
+// Perguntas Frequentes.
+
+const perguntas = document.querySelectorAll(".perguntas button");
+
+function ativarPergunta(event) {
+  const pergunta = event.currentTarget;
+  const controls = pergunta.getAttribute("aria-controls");
+  const resposta = document.getElementById(controls);
+
+  resposta.classList.toggle("ativa");
+  const ativa = resposta.classList.contains("ativa");
+  pergunta.setAttribute("aria-expanded", "true");
+  console.log(resposta);
+}
+
+function eventosPerguntas(pergunta) {
+  pergunta.addEventListener("click", ativarPergunta);
+}
+
+perguntas.forEach(eventosPerguntas);
