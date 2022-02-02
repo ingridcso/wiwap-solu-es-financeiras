@@ -76,9 +76,6 @@
 .bt-acao a:hover:after{
     width: 16%;
 }
-.title {
-    color: #014976;
-}
 .subtitle {
     display: grid;
     grid-auto-rows: minmax(100px, auto);
@@ -161,14 +158,6 @@
     }
     .clique{
         display: none;
-    }
-    .title {
-        color: #014976;
-        font-size: 30px;
-    }
-    .title h2{
-        font-size: 24px;
-        padding-top: 20px;
     }
     .linhadotempolojista{
         display: block;
