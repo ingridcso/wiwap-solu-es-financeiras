@@ -1,0 +1,161 @@
+.header {
+    padding:20px;
+    background-color: #E6E7E8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0px;
+    align-items: center;
+}
+.header-menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header-menu a{
+    font-size: 1rem;
+    padding: 20px;
+    color: #383838;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+}
+.link a::after{
+    display: none;
+}
+.link a:after{
+    content: "";
+    background-color: #00A0A3;
+    display: block;
+    height: 3px;
+    width: 0px;
+    transition: 0.3s;
+    position: absolute;
+}
+.link a:hover:after, .header-menu a.ativo::after{
+    width: 70%;
+}
+.botaolojista {
+    margin-top: 10px;
+    font-size: 1rem;
+    display: block;
+    text-decoration: none;
+    border: 2px solid #003462;
+}
+.botaolojista:hover {
+    background-color: #00A0A3;
+    border: 2px solid #00A0A3;
+    transition: 0.5s;
+}
+.botaolojista a::after{
+    margin-top: 10px;
+    font-size: 1rem;
+    padding: 5px 10px;
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+}
+.header img{
+    height: 40px;
+}
+.header-menu img{
+    height: 20px;
+}
+.botaolojista a {
+    color: #003462;
+    font-size: 1rem;
+    padding: 5px 10px;
+    display: block;
+    text-decoration: none;
+}
+#btn-mobile {
+    display: none;
+}
+@media (max-width: 800px) {
+    #btn-mobile {
+        display: block;
+    }
+    .link a:after {
+        background-color: transparent;
+    }
+    .link a{
+        padding-left: 40%;
+    }
+    .header-menu{
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 70px;
+        right: 0px;
+        background-color: #E6E7E8;
+        height: 0px;
+        transition: .6s;
+        z-index: 1000;
+        visibility:  hidden;
+        overflow-y: hidden;
+    }
+    .botaolojista {
+        font-size: 1rem;
+        display: block;
+        text-decoration: none;
+        border: transparent;
+        padding-left: 40%;
+    }
+    .botaolojista:hover{
+        background-color: transparent;
+        border: transparent;
+    }
+    .botaolojista a {
+        padding: 5px 0px;
+    }
+    #nav.active .header-menu{
+        height: calc(100vh - 70px);
+        visibility:  visible;
+        overflow-y: auto;
+    }
+    .header-menu li {
+        justify-content: center;
+        overflow-x: auto;
+        display: block;
+        border-bottom: 2px solid rgba(0, 0, 0, .05);
+    }
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem
+    }
+    #hamburguer {
+        border-top: 2px solid;
+        width: 20px;
+        display: block;
+    }
+    #hamburguer::after, #hamburguer::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-top: 5px;
+        background: currentColor;
+        transition: .3s;
+        position: relative;
+    }
+    #nav.active #hamburguer{
+        border-top-color: transparent ;
+    }
+    #nav.active #hamburguer::before{
+        transform: rotate(135deg);
+    }
+    #nav.active #hamburguer::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    .header {
+        position: relative;
+    }
+}

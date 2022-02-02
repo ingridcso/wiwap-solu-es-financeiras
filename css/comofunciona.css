@@ -1,0 +1,65 @@
+.conteinervalores {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+    margin-left: 250px;
+}
+.valores-empresa {
+ padding-left: 50px;
+}
+#trabalhe {
+    padding-left: 900px;
+    bottom: 50px;
+    margin: 50px;
+}
+.contatorenegociacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+.cabecalho h2{
+    padding-top: 20px;
+}
+.cabecalho p{
+    color: #383838;
+    margin-top: 20px;
+}
+.wpp {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    width: 400px;
+    padding-left: 70px;
+}
+.wpp img {
+    height: 50px;
+}
+.wpp h1 {
+    font-size: 40px;
+    color: #003462;
+}
+.contatos p {
+    color: #383838;
+    text-align: center;
+    padding:50px;
+}
+.visita h1{
+    text-align: center;
+    padding: 50px;
+    color: #003462;
+}
+.atendimento {
+    text-align: center;
+    margin: 20px;
+}
+.intro h2{
+    color: #003462;
+    padding-top: 50px;
+}
+.intro p{
+    margin-bottom: 20px;
+}
+.visita h3{
+    color: #003462;
+}
