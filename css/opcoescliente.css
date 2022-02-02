@@ -1,0 +1,45 @@
+.lista-clientes {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.lista-clientes ul {
+    display: flex;
+    gap: 40px;
+    padding: 0 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: auto;
+}
+.lista-clientes li{
+    min-width: 100px;
+    flex: 1;
+}
+.lista-clientes a {
+    display: block;
+    cursor: pointer;
+    height: 60px;
+    padding: 20px;
+    border: 2px solid #003462;
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 4px;
+    text-align: center;
+}
+@media (max-width:800px) {
+    .lista-clientes{
+        padding-bottom: 10px;
+        padding-top: 15px;
+    }
+    .lista-clientes ul {
+        gap: 5px;
+        padding-bottom: 15px;
+    }
+    .lista-clientes a {
+        padding: 10px;
+        height: 30px;
+        width: 60px;
+        font-size: 12px;
+    }
+    }
