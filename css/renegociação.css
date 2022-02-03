@@ -36,7 +36,10 @@
         display: none;
 
     }
+    .renegociacaowpp h2{
+        font-size: 20px; 
+    }
     .renegociacao-bg {
-    padding: 10px 50px;
+    padding: 20px 30px;
     }
 }
