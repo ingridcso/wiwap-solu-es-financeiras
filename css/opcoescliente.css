@@ -3,6 +3,9 @@
     padding-bottom: 60px;
     margin-right: auto;
     margin-left: auto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #33AFB4;
 }
 .lista-clientes ul {
     display: flex;
@@ -22,7 +25,7 @@
     cursor: pointer;
     height: 60px;
     padding: 20px;
-    border: 2px solid #003462;
+    box-shadow: 0 4px 5px rgba(33, 14, 201, 0.1);
     background-color: rgba(255, 255, 255, 0.534);
     border-radius: 4px;
     text-align: center;
