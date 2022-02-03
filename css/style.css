@@ -3,6 +3,7 @@
 @import url(./global.css);
 /* MENU */
 @import url(./header.css);
+@import url(./login.css);
 /* AREA CLIENTE */
 @import url(./introducao.css);
 @import url(./opcoescliente.css);
@@ -16,6 +17,7 @@
 @import url(./comofunciona.css);
 /* PERGUNTAS FREQUENTES */
 @import url(./perguntas.css);
+@import url(./politicaseprivacidade.css);
 /* VANTAGENS LOJISTA */
 @import url(./vantagens.css);
 /* CONTATO */
