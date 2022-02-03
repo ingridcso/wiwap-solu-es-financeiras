@@ -37,12 +37,12 @@
         padding-top: 15px;
     }
     .lista-clientes ul {
-        gap: 5px;
+        gap: 10px;
         padding-bottom: 15px;
     }
     .lista-clientes a {
         padding: 10px;
-        height: 30px;
+        height: 40px;
         width: auto;
         font-size: 12px;
         justify-content: center;
