@@ -4,7 +4,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1200px;
     margin: 0px;
     align-items: center;
 }
@@ -37,38 +36,27 @@
 .link a:hover:after, .header-menu a.ativo::after{
     width: 70%;
 }
-.botaolojista {
-    margin-top: 10px;
-    font-size: 1rem;
+.botaolojista a{
     display: block;
-    text-decoration: none;
-    border: 2px solid #003462;
-}
-.botaolojista:hover {
-    background-color: #00A0A3;
-    border: 2px solid #00A0A3;
-    transition: 0.5s;
-}
-.botaolojista a::after{
-    margin-top: 10px;
-    font-size: 1rem;
-    padding: 5px 10px;
-    display: block;
-    text-decoration: none;
+    cursor: pointer;
+    padding: 15px;
+    box-shadow: 0 4px 5px rgba(33, 14, 201, 0.1);
+    background: linear-gradient( #93CDCE, #58c7c9);
+    border-radius: 4px;
+    text-align: center;
     color: #FFF;
+    font-size: 16px;
+    text-decoration: none;
+    }
+.botaolojista a:hover{
+    background: linear-gradient( #439899 #028486);
+    transition: 0.5s;
 }
 .header img{
     height: 40px;
 }
 .header-menu img{
     height: 20px;
-}
-.botaolojista a {
-    color: #003462;
-    font-size: 1rem;
-    padding: 5px 10px;
-    display: block;
-    text-decoration: none;
 }
 #btn-mobile {
     display: none;
@@ -159,4 +147,3 @@
         position: relative;
     }
 }
-
