@@ -1,0 +1,39 @@
+.titulo-login h1{
+    padding-left: 100px;
+    padding-bottom: 20px;
+}
+#externo {
+    background-color: #003462;
+    border-radius: 4px;
+    color: #93CDCE;
+}
+.lista-login {
+    width: 250px;
+    display: grid;
+    gap: 20px;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+.login-bg {
+    padding-bottom: 20px;
+}
+#interno {
+    border: 2px solid #93CDCE;
+    border-radius: 4px;
+    color: #93CDCE;
+}
+.lista-login li {
+    padding: 10px 15px;
+    text-align: center;
+}
+@media (max-width: 800px){
+    .titulo-login h1{
+        padding-left: 30px;
+        padding-bottom: 10px;
+    }
+    .lista-login {
+        display: grid;
+        gap: 20px;
+        justify-content: space-between;
+    }
+}
