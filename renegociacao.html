@@ -3,8 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta name="description" content="Celular em até 24 vezes no boleto e com 30 dias para começar a apagar é só aqui.">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <title>Wiwap - Soluções Finançeiras</title>
 </head>
 <body id="renegociacao">
@@ -14,123 +18,92 @@
             <button id="btn-mobile" aria-label="Abrir Menu"aria-haspopup="true" aria-controls="header-menu" aria-expanded="false">
             <span id="hamburguer"></span></button>
             <ul roel="menu" class="header-menu">
+                <li class="link"><a href="#parasuamepresa"> Para sua empresa </a></li>
                 <li class="link"><a href="./renegociacao.html"> Renegociação </a></li>
                 <li class="link"><a href="./contato.html"> Contato </a></li>
-                <li ><span class="botaolojista"><a href="./"> ACESSO LOJISTA </a></span></li>
+                <li ><span class="botaolojista"><a href="./login.html"> LOGIN </a></span></li>
             </ul>
         </nav>
     </header>
-    <section class="corpoSite">
-        <main class="renegociacao">
-            <section aria-label="Regegociar dívidas">
-                <h1 id="valores">RENEGOCIAÇÃO</h1>
-                <span class="detalhe-empresa"></span>
-            </section>
-            <section aria-label="contato para renegociar" class="contatosRenegociacao">
-                <div class="contatorenegociacao">
-                    <div class="intro">
+        <article class="renegociacao-bg">
+        <div class="renegociacao">
+            <div class="renegociacao-container">
+                <div class="renegociacaowpp">
+                    <h2 class="font-2-wp">Negocie sua dívida e organize sua vida financeira.</h2>
+                    <p>Escaneie esse código para inciar uma conversa ou preencha o formulário nossa equipe entrará em contato o mais breve.</p>
+                    <img src="./img/qrcode.jpg" alt="whatsapp">
+                </div>
+                <div class="fomulario-renegociacao">
+                <h2 class="cor-a5"> Fale com um de nossos especialistas.</h2>
+                <section class="contato-form" aria-label="Formulário">
+                    <form class="form" action="./contato.html">
                         <div>
-                            <h2 class="font-2-wp">Negocie sua dívida e organize sua vida financeira.</h2>
-                            <p>entre em contato pelo nosso WhatsApp ou preencha o formulário e <br> nossa equipe entrará em contato o mais breve.</p>
+                            <label class="cor-a1" for="nome" >Nome:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
                         </div>
-                    <div class="v"></div>
-                        <div class="wpp">       
-                            <img src="./img/icon-whatsapp.svg" alt="whatsapp">
-                            <h1>(31)97191-0858</h1>
+                        <div>
+                            <label class="cor-a1"for="empresa" class="labelInput">Empresa:</label>
+                            <input type="text" id="empresa" name="empresa" placeholder="Nome da sua empresa"required>
                         </div>
-                    </div>
-            <form action="/action_page.php">
-                <div class="inputBox">
-                    <input type="text" id="name" name="name" class="inputUser" required><br>
-                    <label for="name" class="labelInput">Nome:</label>
-                </div><br>
-                <div class="inputBox">
-                    <input type="email" id="email" name="email" class="inputUser"  required><br>
-                    <label for="email" class="labelInput">Email:</label>
-                </div><br>
-                <div class="inputBox">
-                    <input type="text" id="empresa" name="empresa" class="inputUser" required>
-                    <label for="empresa" class="labelInput">Empresa:</label>
-                </div><br>
-                <div class="inputBox">
-                    <input type="number" id="number" name="number" class="inputUser"  required>
-                    <label for="telefone" class="labelInput">Telefone:</label>
-                </div><br>
-                <div class="inputBox">
-                    <input type="mensagem" id="mensagem" name="mensagem" class="inputUser" required>
-                    <label for="mensagem" class="labelInput">Mensagem:</label>
-                </div><br>  
-            </form>
-            <div class="v"></div>
-                <div class="conhecer">
-                    <span class="conhecer" class="labelInput"><a href="./">ENVIAR MENSAGEM</a></span>
+                        <div class="col-2">
+                            <label class="cor-a1"for="email" class="labelInput">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="cliente@wiwap.com"required>
+                        </div>
+                        <div>
+                            <label class="cor-a1"for="telefone" class="labelInput">Telefone:</label>
+                            <input type="number" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX"required>
+                        </div>
+                        <div>
+                            <label class="cor-a1"for="cidade" class="labelInput">Cidade:</label>
+                            <input type="text" id="cidade" name="cidade" placeholder="Belo Horizonte - MG" required>
+                        </div>
+                        <div class="col-2">
+                                <label class="cor-a1"for="mensagem" class="labelInput">Mensagem:</label>
+                                <textarea rows="5" type="mensagem" id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                        </div>
+                    </form>
+                    <span class="button-formulario font-3-w-p "><a href="./">Enviar contato.</a></span>
+                </section>
+        </div>
+    </article>
+        <div class="horario-atendimento">
+            <p class="font-3-w-p">Atendimento 08h às 18h de segunda à sexta.</p>
+        </div>
+    <footer class="footer-bg">
+        <div class="footer container">
+        <img src="./img/logowiwap.svg" alt="Wiwap">
+                <div  class="footer-contato">
+                <h3 class="font-2-w-p cor-a4">Contato</h3>
+                <ul>
+                    <li><a class="cor-a1 font-3-w-p" href="tel:+553197591-0858">(31) 97591-0858</a></li>
+                    <li><a class="cor-a1 font-3-w-p" href="mailto:contatowiwap@wiwap.com.br">contatowiwap@wiwap.com.br</a></li>
+                    <li class="cor-a1 font-3-w-p"><p>Minas Gerais - Brasil</p></li>
+                </ul>
+                <div class="footer-redes">
+                    <a href="https://instagram.com/wiwap_?utm_medium=copy_link" >
+                        <img src="./img/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="./" alt="Instagram">
+                        <img src="./img/linkedin.svg" alt="Linkedin">
+                    </a>
                 </div>
-            </div>
-                <div class="atendimento">
-                    <p>Atendimento 08h às 18h de segunda à sexta.</p>
                 </div>
-            </section>
+                <div class="footer-informacoes">
+                     <h3 class="font-2-w-p cor-a4">Informações</h3>
+                     <nav>
+                         <ul>
+                            <li><a class="cor-a1 font-3-w-p" href="#parasuamepresa"> Para sua empresa </a></li>
+                            <li><a class="cor-a1 font-3-w-p" href="./renegociacao.html"> Renegociação </a></li>
+                            <li><a class="cor-a1 font-3-w-p" href="./politicaseprivacidades.html"> Politicas de privacidade </a></li>
+                            <li><a class="cor-a1 font-3-w-p" href="./politicaseprivacidades.html"> Carta ao beneficiário </a></li>
+                         </ul>
+                     </nav>
+                </div>
+                <p class="footer-copy font-3-w-p font-4-wp">CNPJ 39.474.294/00001-29. Todos os direitos reservados.</p>
             </div>
-        </main>
-    </section>
-    <footer class="rodape">
-        <div class="direito">
-            <img src="./img/logowiwap.svg">
-            <h2> Fale com um de nossos especialistas.</h2>
-            <p> saiba como podemos te ajudar a aumentar as suas vendas! </p>
-            <div class="form">
-            <form action="/action_page.php">
-                <div class="inputBox">
-                    <input type="text" id="name" name="name" class="inputUser" required><br>
-                    <label for="name" class="labelInput">Nome:</label>
-                </div><br>
-                <div class="inputBox">
-                    <input type="email" id="email" name="email" class="inputUser"  required><br>
-                    <label for="email" class="labelInput">Email:</label>
-                </div><br>
-                <div class="inputBox">
-                    <input type="text" id="empresa" name="empresa" class="inputUser" required>
-                    <label for="empresa" class="labelInput">Empresa:</label>
-                </div><br>
-                    <div class="inputBox">
-                    <input type="number" id="number" name="number" class="inputUser"  required>
-                    <label for="telefone" class="labelInput">Telefone:</label>
-                </div><br>
-                <div class="inputBox">
-                    <input type="mensagem" id="mensagem" name="mensagem" class="inputUser" required>
-                    <label for="mensagem" class="labelInput">Mensagem:</label>
-                </div><br>  
-            </form>
-            <div class="conhecer">
-                <span class="conhecer" class="labelInput"><a href="./">ENVIAR MENSAGEM</a></span>
-            </div>
-        </div>
-    </div>
-    <div class="lateral">
-        <div class="partesobre">
-            <nav class="sobre">
-                <div class="linha">
-                    <h3 ><a href="./institucional.html">SOBRE NÓS</a></h3><br/>
-                    <ul>
-                        <li><a href="./institucional.html">Nossa história</a></li>
-                        <li><a href="./institucional.html">Próposito</a></li>
-                        <li><a href="./institucional.html">Valores</a></li>
-                    </ul>
-                </div></br>
-            <div>
-                <h3 class="linha"><a href="./renegociacao.html">RENEGOCIAÇÃO</a></h3>
-            </div></br>
-            <h3 class="linha" ><a href="./contato.html">CONTATO</a></h3></br>
-        </div>
-        <div class="redessociais">
-            <img src="./img/instagram.png">
-            <img src="./img/linkedin .png">
-            <p> nos siga em nossas redes sociais! </p>
-            <p><strong> Todos os direitos reservados. W2p Soluções Financeiras Ltda. CNPJ 39.474.294/00001-29 </p></strong>
-        </div>
-            </nav>
         </footer>
-    <script src="./js/mobilenav.js"></script>
+        <div id="div_fixa"><a href="https://api.whatsapp.com/send?phone=5531971910858&text=Olá, boa tarde! Gostaria de saber mais informações."><img src="./img/wpp-flutuante.svg"> </a></div>
+        <script src="./js/mobilenav.js"></script>
 </body>
 </html>
 </html>
