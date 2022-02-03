@@ -95,7 +95,7 @@ textarea {
 @media (max-width:800px) {
     .parceria-bg {
         grid-template-columns: 1fr;
-        padding: 20px
+        padding: 20px;
     }    
     .parceria-bg h2 {
         font-size: 36px;
