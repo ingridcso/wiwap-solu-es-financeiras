@@ -1,0 +1,23 @@
+.renegociacao-bg {
+    background-color: #E6E7E8;
+    padding: 30px 100px;
+}
+.renegociacao-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+.renegociacaowpp h2{
+    line-height: 1.100;
+    color: #00172C;
+}
+.renegociacaowpp img{
+    height: 300px;
+    width: 300px;
+    padding-left: 90px;
+    padding-top: 30px;
+}
+.horario-atendimento {
+    text-align: center;
+    padding-bottom: 20px;
+}
