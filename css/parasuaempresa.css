@@ -57,7 +57,9 @@
     .linhadotempolojista{
         display: block;
         padding: 0px;
-        background-color:#D7DEE4;;
+        padding-bottom: 30px;
+        background-color:#D7DEE4;
+        margin: 0px
     }
     .primeiro{
         height: 100px;
