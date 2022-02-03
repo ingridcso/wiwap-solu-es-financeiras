@@ -44,6 +44,9 @@ a {
   font-size: 18px;
   font-weight: bold;
 }
+.font {
+  font-family: Poppins;
+}
 .font-2-wp{
   font-size: 34px
 }
@@ -68,4 +71,3 @@ a {
     padding-top: 20px;
 }
 }
-
