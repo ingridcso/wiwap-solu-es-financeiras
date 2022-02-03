@@ -42,7 +42,8 @@
     .lista-clientes a {
         padding: 10px;
         height: 30px;
-        width: 60px;
+        width: auto;
         font-size: 12px;
+        justify-content: center;
     }
     }
