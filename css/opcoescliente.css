@@ -1,35 +1,41 @@
 .lista-clientes {
-    padding-top: 60px;
     padding-bottom: 60px;
     margin-right: auto;
     margin-left: auto;
     font-size: 16px;
-    font-weight: bold;
     color: #33AFB4;
+    gap: 20px;
 }
 .lista-clientes ul {
     display: flex;
-    gap: 40px;
-    padding: 0 10px;
-    max-width: 800px;
+    margin-top: 50px;
+    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
     overflow-x: auto;
+    gap: 20px;
+}
+.para-clientes {
+    text-align: center;
 }
 .lista-clientes li{
     min-width: 100px;
     flex: 1;
+    display: block;
+    text-align: center;
 }
 .lista-clientes a {
     display: block;
     cursor: pointer;
-    height: 60px;
-    padding: 20px;
+    height: 70px;
+    width: 80px;
+    padding: 10px;
     border: 1px solid #33AFB4;
-    box-shadow: 0 0 6px #00172C;
+    box-shadow: 0 0 3px #00172C;
     background-color: rgba(255, 255, 255, 0.534);
     border-radius: 4px;
     text-align: center;
+    font-size: 13px;
 }
 @media (max-width:800px) {
     .lista-clientes{
