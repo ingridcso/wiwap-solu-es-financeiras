@@ -1,0 +1,31 @@
+.politicas ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 60px 40px;
+    gap: 40px;
+}
+.politicas li {
+    border-radius: 4px;
+    background-color: #93cdce46;
+    box-shadow: 0 0 2px #00172C;
+    /*border: 1px solid #00172C;*/
+}
+.politicas p {
+    padding: 20px;
+    font-size: 14px;
+    color: #00172C;
+}
+.politicas h3 {
+    padding-top: 10px;
+    font-size: 18px;
+    color: #014976;
+    text-align: center;
+}
+@media (max-width:800px) { 
+    .politicas ul {
+        gap:20px;
+        grid-template-columns: 1fr;
+        padding-left: 0px;
+        padding: 25px 30px
+    }
+}
