@@ -1,8 +1,5 @@
 .vantagens {
-    padding: 30px 70px;
-}
-.vantagens h2 {
-    margin-bottom: 20px;
+    padding: 20px 100px;
 }
 .vantagens ul {
     display: grid;
@@ -17,6 +14,17 @@
 }
 .vantagens li{
     text-align: center;
+}
+.area-cliente {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.area-cliente h2{
+    padding-top: 50px;
+}
+.area-cliente img {
+    height: 150px;
+    width: 90px;
 }
 @media (max-width: 800px){
     .vantagens {
